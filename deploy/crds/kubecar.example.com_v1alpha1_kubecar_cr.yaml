@@ -1,0 +1,9 @@
+apiVersion: kubecar.example.com/v1alpha1
+kind: KubeCar
+metadata:
+  name: example-kubecar
+spec:
+  # Add fields here
+  size: 3
+  brand: 'Tesla'
+  model: 'X'

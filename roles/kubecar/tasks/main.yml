@@ -1,0 +1,11 @@
+---
+# tasks file for kubecar
+- name: Debug Meta Information
+  debug:
+    msg: "name: {{meta.name}}, namespace: {{ meta.namespace }}"
+
+- name: start kubecar
+  k8s:
+    state: present
+    definition: "{{ lookup('template', './templates/kubecar.deployment.yaml.j2') }}"
+    namespace: "{{meta.namespace}}"

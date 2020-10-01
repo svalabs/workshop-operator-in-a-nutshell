@@ -1,0 +1,24 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: "{{meta.name}}-kubecar"
+  namespace: "{{meta.namespace}}"
+spec:
+  replicas: {{size}}
+  selector:
+    matchLabels:
+      app: kubecar
+  template:
+    metadata:
+      labels: 
+        app: kubecar
+        brand: {{brand}}
+        model: {{model}}
+    spec:
+      containers:
+        - name: kubecar
+          image: busybox
+          command: 
+            - sleep
+            - "10000"
