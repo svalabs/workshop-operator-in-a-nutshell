@@ -40,4 +40,4 @@ Running the Example
 - `kubectl get all -n kubecar` - see all resources in the kubecar namespace, look for the automatically generated deployment and pods created by the operator.
 
 4. Cleanup
-You can use the `cleanup.sh` script in the root of the repo.
+- You can use the `cleanup.sh` script in the root of the repo.
