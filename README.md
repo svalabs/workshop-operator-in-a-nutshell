@@ -38,3 +38,6 @@ Running the Example
 - `kubectl get kubecar` - List all KubeCar resources
 - `kubectl describe kubecar example-kubecar` - Get details of the example-kubecar resource
 - `kubectl get all -n kubecar` - see all resources in the kubecar namespace, look for the automatically generated deployment and pods created by the operator.
+
+4. Cleanup
+You can use the `cleanup.sh` script in the root of the repo.
